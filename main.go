@@ -10,5 +10,6 @@ func main() {
 	router := gin.Default()
 	// initialize router handlers
 	routing.Handlers(router)
+	// run server on port 8080
 	router.Run(":8080")
 }
