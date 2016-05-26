@@ -1,0 +1,3 @@
+package: github.com/udryan10/go-api-boilerplate
+import:
+- package: github.com/gin-gonic/gin
