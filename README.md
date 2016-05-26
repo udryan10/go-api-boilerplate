@@ -10,10 +10,21 @@
 #### Install dependencies
 `glide install`
 #### Running
-`go run main.go`
-#### Testing API
+```
+$ go run main.go
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /status                   --> github.com/udryan10/go-api-boilerplate/controllers.Status (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+```
+
+#### Testing
 ```
 $ curl http://localhost:8080/status -v
+
 *   Trying ::1...
 * Connected to localhost (::1) port 8080 (#0)
 > GET /status HTTP/1.1
